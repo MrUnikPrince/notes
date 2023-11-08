@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    scroll-behavior: smooth;
+}
 
 .main {
     margin: 3%;
@@ -306,4 +309,69 @@ input:focus {
 }
 
 
-  
+/* Style for mobile devices */
+
+@media only screen and (max-width: 767px) {
+    body {
+        width: 100vw;
+        height: auto;
+    }
+    hr {
+        display: none;
+    }
+    .card-container {
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+    }
+    .note-card {
+        width: 90%;
+        margin: 3%;
+    }
+
+    footer{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    footer>h1{
+        margin-top: 50px;
+        margin-bottom: -25px;
+        text-transform: uppercase;
+        border-bottom: 2px solid black;
+    }
+    footer>.about-us {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about{
+        width: 100vw;
+        height: auto;
+    }
+    .about>p{
+        margin: 10px;
+        font-size: 1.9rem;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+    .contact-form {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .copy-right {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+}
+
+/* end of style for mobile devices */
